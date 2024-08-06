@@ -8,25 +8,11 @@ jobs:
 
     steps:
       - name: Automatically triggered test event
-        run: echo "Automatically triggered test event"
+      - run: echo "Automatically triggered test event"
 
       - name: Print Teamwork Message
-        run: echo "Teamwork"
+      - run: echo "Teamwork"
 
       - name: Print Group Members
-        run: echo "Group members: Vanessa and Winnie"
+      - run: echo "Group members: Vanessa and Winnie"
 
-      - name: Checkout code from repo
-        uses: actions/checkout@v4
-
-      - name: Repository Cloned
-        run: echo "The repository has been cloned"
-
-      - name: Testing the runner or VM
-        run: echo "Testing the runner or VM"
-
-      - name: List files in the repository
-        run: ls ${{ github.workspace }}
-
-      - name: Completion Message
-        run: echo "We are done"
