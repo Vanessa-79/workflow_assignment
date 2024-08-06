@@ -8,4 +8,10 @@ jobs:
       - run: echo "Automatically triggered test event"
       - run: echo "Teamwork"
       - run: echo "Group members: Vanessa and Winnie"
-      
+      - name: Checkout code from repo
+        uses: actions/checkout@v4
+      - run: echo "The repository has been cloned"
+      - run: echo "Testing the runner or VM"
+      - name: List files in the repository
+        run: ls ${{github.workspace}}
+      - run: echo "We are done"
