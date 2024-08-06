@@ -6,11 +6,6 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Automatically triggered test event
-      - run: echo "Automatically triggered test event"
-      - name: Checkout code from repo
-        uses: actions/checkout@v4
-      - run: 
-          ls ${{github.workspace}}
+      - run: echo "Hello, world"
       - run: echo "Group members Vanessa Nassanga and Atim Winnie"
 
