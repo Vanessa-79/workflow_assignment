@@ -14,5 +14,5 @@ jobs:
       - run: echo "Teamwork"
 
       - name: Print Group Members
-      - run: echo "Group members: Vanessa and Winnie"
+      - run: echo "Group members Vanessa and Winnie"
 
